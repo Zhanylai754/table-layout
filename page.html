@@ -1,0 +1,1971 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<meta charset="utf-8" />
+	<link href="/font/awesome.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="data:text/css;base64,KnttYXJnaW46MDtwYWRkaW5nOjA7Ym94LXNpemluZzpib3JkZXItYm94O291dGxpbmU6MH1ib2R5LGh0bWx7Zm9udC1zaXplOjIwcHghaW1wb3J0YW50O21hcmdpbjowIWltcG9ydGFudH1ib2R5e292ZXJmbG93LXg6aGlkZGVuIWltcG9ydGFudDtwYWRkaW5nOjFyZW0haW1wb3J0YW50fWgxe21hcmdpbjowIWltcG9ydGFudDtwYWRkaW5nOjAhaW1wb3J0YW50O2ZvbnQtZmFtaWx5OidPcGVuIFNhbnMgQ29uZGVuc2VkJyxzYW5zLXNlcmlmIWltcG9ydGFudDtmb250LXNpemU6MnJlbSFpbXBvcnRhbnQ7Zm9udC13ZWlnaHQ6MzAwIWltcG9ydGFudDt0ZXh0LWFsaWduOmNlbnRlciFpbXBvcnRhbnQ7dXNlci1zZWxlY3Q6bm9uZSFpbXBvcnRhbnR9bWFpbj5zZWN0aW9ue3BhZGRpbmc6MCFpbXBvcnRhbnQ7bWFyZ2luOjJyZW0gMCAwIDAhaW1wb3J0YW50fW1haW4+c2VjdGlvbj5oZWFkZXJ7bWFyZ2luOjAgMCAycmVtIDAhaW1wb3J0YW50O3BhZGRpbmc6Y2FsYygxcmVtIC0gMXB4KSAwIWltcG9ydGFudDtib3JkZXItdG9wOjFweCBkYXNoZWQgIzk5OSFpbXBvcnRhbnQ7Ym9yZGVyLWJvdHRvbToxcHggZGFzaGVkICM5OTkhaW1wb3J0YW50fW1haW4+c2VjdGlvbj5oZWFkZXI+aDJ7bWFyZ2luOjAhaW1wb3J0YW50O2ZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWYhaW1wb3J0YW50O2ZvbnQtc2l6ZToxLjJyZW0haW1wb3J0YW50O2xpbmUtaGVpZ2h0OjEuNXJlbSFpbXBvcnRhbnQ7Zm9udC13ZWlnaHQ6NDAwIWltcG9ydGFudDt1c2VyLXNlbGVjdDpub25lIWltcG9ydGFudH0=" />
+
+	<title>Табличные стили</title>
+</head>
+<!--
+===========================================================================================================
+
+	Каждый образец представлен в самостоятельном и независимом от других элементе <section>,
+	который содержит заголовочную часть <header> и заголовок <h2> с номером образца.
+
+	Общим контейнером для образца является элемент <section> с соответствующим идентификатором,
+	который необходимо использовать в каждом селекторе стиля каждого образца.
+
+	В каждом контейнере <section> уже имеется контейнер <style>, в котором необходимо написать стили
+	для соответствующего образца, можно добавлять и другие элементы разметки, если они необходимы.
+
+===========================================================================================================
+
+	Используемые изображения расположены по пути в той же папке, что и эта страница.
+	Все используемые в этом тесте шрифты уже импортированы и прикреплены к странице.
+	Фамилии шрифтов, а также используемые цвета вы можете видеть под каждым образцом.
+	Для всей страницы уже выставлен базовый размер шрифта: 20px
+
+===========================================================================================================
+
+	У всех элементов уже выставлены:
+
+	* { margin: 0; padding: 0; box-sizing: border-box; outline: none }
+
+===========================================================================================================
+
+	Фиксации для всех черновиков:
+		Черновик [table-…]
+
+	Фиксации для первой публикации в чистовике:
+		Выполнен [table-…]
+
+	Фиксации для всех правок в чистовике по рецензии:
+		Исправлен [table-…]
+
+=================================================================================================
+-->
+<body>
+<header>
+	<h1>Табличные стили</h1>
+</header>
+<main>
+
+<section id="table-1">
+	<style>
+		#table-1 table {
+			width: 80%;
+			min-width: 40rem;
+			margin: auto;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 0.85rem;
+			color: #333;
+		}
+
+		#table-1 caption {
+			margin-bottom: 1rem;
+			font-size: 1rem;
+			font-weight: bold;
+		}
+
+		#table-1 table,
+		#table-1 td,
+		#table-1 th {
+			border: 1px dashed #999;
+			text-align: center;
+		}
+
+		#table-1 td,
+		#table-1 th {
+			padding: 0.5rem
+		}
+
+		#table-1 th {
+			font-weight: 300
+		}
+
+		#table-1 tbody th,
+		#table-1 tfoot th {
+			text-align: left;
+			background-color: #cfd8dc;
+		}
+
+		#table-1 thead th {
+			line-height: 2rem;
+			background-color: #eceff1;
+		}
+
+			#table-1 thead th:nth-child(1) {
+				width: 60%
+			}
+
+			#table-1 thead th:nth-child(n+2) {
+				width: 10%
+			}
+	</style>
+	<header>
+		<h2>Таблица № 1</h2>
+	</header>
+	<table class="table">
+		<caption>Lorem Ipsum</caption>
+		<thead>
+			<tr>
+				<th>Lorem</th>
+				<th>Ipsum</th>
+				<th>Dolor</th>
+				<th>Sit</th>
+				<th>Amet</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Duis rutrum sapien</th>
+				<td>456.12</td>
+				<td>951.65</td>
+				<td>495.36</td>
+				<td>497.66</td>
+			</tr>
+			<tr>
+				<th>Mauris sagittis lectus</th>
+				<td>325.49</td>
+				<td>482.58</td>
+				<td>498.57</td>
+				<td>964.18</td>
+			</tr>
+			<tr>
+				<th>Curabitur sed</th>
+				<td>4698.01</td>
+				<td>4986.25</td>
+				<td>4296.04</td>
+				<td>4786.21</td>
+			</tr>
+			<tr>
+				<th>Sed quis libero dictum</th>
+				<td>5697.25</td>
+				<td>6984.56</td>
+				<td>2584.75</td>
+				<td>2694.51</td>
+			</tr>
+			<tr>
+				<th>Vivamus finibus augue</th>
+				<td>3265.98</td>
+				<td>7859.52</td>
+				<td>4895.36</td>
+				<td>8469.12</td>
+			</tr>
+			<tr>
+				<th>Nullam vel ligula consectetur</th>
+				<td>6598.25</td>
+				<td>126.05</td>
+				<td>49.16</td>
+				<td>4689.46</td>
+			</tr>
+			<tr>
+				<th>Maecenas vel quam pharetra</th>
+				<td>458.23</td>
+				<td>945.36</td>
+				<td>716.54</td>
+				<td>715.59</td>
+			</tr>
+			<tr>
+				<th>Sed quis urna pretium</th>
+				<td>6548.36</td>
+				<td>4896.95</td>
+				<td>4826.35</td>
+				<td>7894.50</td>
+			</tr>
+			<tr>
+				<th>Maecenas suscipit dolor</th>
+				<td>1.2</td>
+				<td>1.5</td>
+				<td>1.2</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<th>Praesent ac enim sed</th>
+				<td>4698.25</td>
+				<td>659.47</td>
+				<td>9.5</td>
+				<td>734.51</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>Praesent vel metus</th>
+				<td>265.24</td>
+				<td>235.53</td>
+				<td>14.35</td>
+				<td>456.52</td>
+			</tr>
+		</tfoot>
+	</table>
+</section>
+
+<section id="table-2">
+	<style>
+		#table-2 .wrapper {
+			min-width: 40rem;
+			padding: 2rem 0;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 0.85rem;
+			background-color: #eceff1;
+			color: #333;
+		}
+
+		#table-2 table {
+			width: 80%;
+			margin: auto;
+			border-spacing: 0;
+			border-collapse: collapse;
+			text-align: center;
+		}
+
+		#table-2 caption {
+			margin-bottom: 1rem;
+			font-size: 1rem;
+			font-weight: bold;
+		}
+
+		#table-2 td,
+		#table-2 th {
+			padding: 0.5rem;
+			border-bottom: 1px solid #ccc;
+		}
+
+		#table-2 th {
+			font-weight: 300
+		}
+
+		#table-2 tbody th,
+		#table-2 tfoot th {
+			text-align: left
+		}
+
+		#table-2 thead th {
+			line-height: 2rem
+		}
+
+			#table-2 thead th:nth-child(1) {
+				width: 60%
+			}
+
+			#table-2 thead th:nth-child(n+2) {
+				width: 10%
+			}
+	</style>
+	<header>
+		<h2>Таблица № 2</h2>
+	</header>
+	<div class="wrapper">
+		<table>
+			<caption>Lorem Ipsum</caption>
+			<thead>
+				<tr>
+					<th>Lorem</th>
+					<th>Ipsum</th>
+					<th>Dolor</th>
+					<th>Sit</th>
+					<th>Amet</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Duis rutrum sapien</th>
+					<td>456.12</td>
+					<td>951.65</td>
+					<td>495.36</td>
+					<td>497.66</td>
+				</tr>
+				<tr>
+					<th>Mauris sagittis lectus</th>
+					<td>325.49</td>
+					<td>482.58</td>
+					<td>498.57</td>
+					<td>964.18</td>
+				</tr>
+				<tr>
+					<th>Curabitur sed</th>
+					<td>4698.01</td>
+					<td>4986.25</td>
+					<td>4296.04</td>
+					<td>4786.21</td>
+				</tr>
+				<tr>
+					<th>Sed quis libero dictum</th>
+					<td>5697.25</td>
+					<td>6984.56</td>
+					<td>2584.75</td>
+					<td>2694.51</td>
+				</tr>
+				<tr>
+					<th>Vivamus finibus augue</th>
+					<td>3265.98</td>
+					<td>7859.52</td>
+					<td>4895.36</td>
+					<td>8469.12</td>
+				</tr>
+				<tr>
+					<th>Nullam vel ligula consectetur</th>
+					<td>6598.25</td>
+					<td>126.05</td>
+					<td>49.16</td>
+					<td>4689.46</td>
+				</tr>
+				<tr>
+					<th>Maecenas vel quam pharetra</th>
+					<td>458.23</td>
+					<td>945.36</td>
+					<td>716.54</td>
+					<td>715.59</td>
+				</tr>
+				<tr>
+					<th>Sed quis urna pretium</th>
+					<td>6548.36</td>
+					<td>4896.95</td>
+					<td>4826.35</td>
+					<td>7894.50</td>
+				</tr>
+				<tr>
+					<th>Maecenas suscipit dolor</th>
+					<td>1.2</td>
+					<td>1.5</td>
+					<td>1.2</td>
+					<td>1.2</td>
+				</tr>
+				<tr>
+					<th>Praesent ac enim sed</th>
+					<td>4698.25</td>
+					<td>659.47</td>
+					<td>9.5</td>
+					<td>734.51</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Praesent vel metus</th>
+					<td>265.24</td>
+					<td>235.53</td>
+					<td>14.35</td>
+					<td>456.52</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</section>
+
+<section id="table-3">
+	<style>
+		#table-3 table {
+			width: 80%;
+			min-width: 40rem;
+			margin: auto;
+			border-spacing: 0;
+			border-collapse: collapse;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 0.85rem;
+			text-align: right;
+			color: #333;
+		}
+
+		#table-3 caption {
+			margin-bottom: 1rem;
+			font-size: 1rem;
+			font-weight: bold;
+		}
+
+		#table-3 td,
+		#table-3 th {
+			padding: 0.5rem
+		}
+
+			#table-3 th:nth-child(1) {
+				text-align: left
+			}
+
+			#table-3 th:last-child,
+			#table-3 td:last-child {
+				background-color: #f3e5f5
+			}
+
+		#table-3 th {
+			font-weight: 300
+		}
+
+		#table-3 td,
+		#table-3 tbody th {
+			border-bottom: 1px solid #ccc
+		}
+
+		#table-3 thead th {
+			border-top: 0.2rem solid #ce93d8;
+			border-bottom: 0.2rem solid #ce93d8;
+			line-height: 2rem;
+		}
+
+			#table-3 thead th:nth-child(1) {
+				width: 50%
+			}
+
+			#table-3 thead th:nth-child(n+2) {
+				width: calc(50% / 4)
+			}
+
+		#table-3 tfoot td,
+		#table-3 tfoot th {
+			border-bottom: 0.2rem solid #ce93d8;
+			background-color: #f3e5f5;
+		}
+	</style>
+	<header>
+		<h2>Таблица № 3</h2>
+	</header>
+	<table>
+		<caption>Lorem Ipsum</caption>
+		<thead>
+			<tr>
+				<th>Lorem</th>
+				<th>Ipsum</th>
+				<th>Dolor</th>
+				<th>Sit</th>
+				<th>Amet</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Duis rutrum sapien</th>
+				<td>456.12</td>
+				<td>951.65</td>
+				<td>495.36</td>
+				<td>497.66</td>
+			</tr>
+			<tr>
+				<th>Mauris sagittis lectus</th>
+				<td>325.49</td>
+				<td>482.58</td>
+				<td>498.57</td>
+				<td>964.18</td>
+			</tr>
+			<tr>
+				<th>Curabitur sed</th>
+				<td>4698.01</td>
+				<td>4986.25</td>
+				<td>4296.04</td>
+				<td>4786.21</td>
+			</tr>
+			<tr>
+				<th>Sed quis libero dictum</th>
+				<td>5697.25</td>
+				<td>6984.56</td>
+				<td>2584.75</td>
+				<td>2694.51</td>
+			</tr>
+			<tr>
+				<th>Vivamus finibus augue</th>
+				<td>3265.98</td>
+				<td>7859.52</td>
+				<td>4895.36</td>
+				<td>8469.12</td>
+			</tr>
+			<tr>
+				<th>Nullam vel ligula consectetur</th>
+				<td>6598.25</td>
+				<td>126.05</td>
+				<td>49.16</td>
+				<td>4689.46</td>
+			</tr>
+			<tr>
+				<th>Maecenas vel quam pharetra</th>
+				<td>458.23</td>
+				<td>945.36</td>
+				<td>716.54</td>
+				<td>715.59</td>
+			</tr>
+			<tr>
+				<th>Sed quis urna pretium</th>
+				<td>6548.36</td>
+				<td>4896.95</td>
+				<td>4826.35</td>
+				<td>7894.50</td>
+			</tr>
+			<tr>
+				<th>Maecenas suscipit dolor</th>
+				<td>1.2</td>
+				<td>1.5</td>
+				<td>1.2</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<th>Praesent ac enim sed</th>
+				<td>4698.25</td>
+				<td>659.47</td>
+				<td>9.5</td>
+				<td>734.51</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>Praesent vel metus</th>
+				<td>265.24</td>
+				<td>235.53</td>
+				<td>14.35</td>
+				<td>456.52</td>
+			</tr>
+		</tfoot>
+	</table>
+</section>
+
+<section id="table-4">
+	<style>
+		#table-4 table {
+			width: 80%;
+			min-width: 40rem;
+			margin: auto;
+			border-spacing: 0.2rem;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 0.85rem;
+			color: #333;
+		}
+
+		#table-4 caption {
+			padding: 1rem 0;
+			border-top: 0.2rem solid #a5d6a7;
+			font-size: 1.5rem;
+			font-weight: bold;
+			letter-spacing: 0.15em;
+			text-align: right;
+			text-transform: uppercase;
+		}
+
+		#table-4 table,
+		#table-4 td,
+		#table-4 th {
+			text-align: center
+		}
+
+		#table-4 td,
+		#table-4 th {
+			padding: 0.5rem
+		}
+
+		#table-4 tfoot th {
+			text-align: left
+		}
+
+		#table-4 tbody th,
+		#table-4 tfoot th {
+			text-align: right
+		}
+
+		#table-4 th {
+			font-weight: bold;
+			line-height: 2rem;
+			background-color: #A5D6A7;
+		}
+
+		#table-4 tr:nth-of-type(odd) td {
+			background-color: #e8f5e9
+		}
+
+		#table-4 tr:nth-of-type(even) td {
+			background-color: #c8e6c9
+		}
+
+		#table-4 thead th:nth-child(1) {
+			width: 40%
+		}
+
+		#table-4 thead th:nth-child(n+2) {
+			width: calc(60% / 4)
+		}
+	</style>
+	<header>
+		<h2>Таблица № 4</h2>
+	</header>
+	<table>
+		<caption>Lorem Ipsum</caption>
+		<thead>
+			<tr>
+				<th>Lorem</th>
+				<th>Ipsum</th>
+				<th>Dolor</th>
+				<th>Sit</th>
+				<th>Amet</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Duis rutrum sapien</th>
+				<td>456.12</td>
+				<td>951.65</td>
+				<td>495.36</td>
+				<td>497.66</td>
+			</tr>
+			<tr>
+				<th>Mauris sagittis lectus</th>
+				<td>325.49</td>
+				<td>482.58</td>
+				<td>498.57</td>
+				<td>964.18</td>
+			</tr>
+			<tr>
+				<th>Curabitur sed</th>
+				<td>4698.01</td>
+				<td>4986.25</td>
+				<td>4296.04</td>
+				<td>4786.21</td>
+			</tr>
+			<tr>
+				<th>Sed quis libero dictum</th>
+				<td>5697.25</td>
+				<td>6984.56</td>
+				<td>2584.75</td>
+				<td>2694.51</td>
+			</tr>
+			<tr>
+				<th>Vivamus finibus augue</th>
+				<td>3265.98</td>
+				<td>7859.52</td>
+				<td>4895.36</td>
+				<td>8469.12</td>
+			</tr>
+			<tr>
+				<th>Nullam vel ligula consectetur</th>
+				<td>6598.25</td>
+				<td>126.05</td>
+				<td>49.16</td>
+				<td>4689.46</td>
+			</tr>
+			<tr>
+				<th>Maecenas vel quam pharetra</th>
+				<td>458.23</td>
+				<td>945.36</td>
+				<td>716.54</td>
+				<td>715.59</td>
+			</tr>
+			<tr>
+				<th>Sed quis urna pretium</th>
+				<td>6548.36</td>
+				<td>4896.95</td>
+				<td>4826.35</td>
+				<td>7894.50</td>
+			</tr>
+			<tr>
+				<th>Maecenas suscipit dolor</th>
+				<td>1.2</td>
+				<td>1.5</td>
+				<td>1.2</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<th>Praesent ac enim sed</th>
+				<td>4698.25</td>
+				<td>659.47</td>
+				<td>9.5</td>
+				<td>734.51</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>Praesent vel metus</th>
+				<td>265.24</td>
+				<td>235.53</td>
+				<td>14.35</td>
+				<td>456.52</td>
+			</tr>
+		</tfoot>
+	</table>
+</section>
+
+<section id="table-5">
+	<style>
+		#table-5 .wrapper {
+			min-width: 40rem;
+			padding: 2rem;
+			font-family: 'Times New Roman', serif;
+			background-color: #f5f5f5;
+		}
+
+		#table-5 .paper {
+			width: 60%;
+			min-width: 36rem;
+			margin: auto;
+			padding: 2rem;
+			box-shadow: 0 0.5rem 1rem -0.5rem rgba(0,0,0,0.5);
+			background-color: #fafafa;
+		}
+
+		#table-5 table {
+			width: 100%;
+			margin: auto;
+			border-spacing: 0;
+			border-collapse: collapse;
+		}
+
+		#table-5 caption {
+			margin-bottom: 1rem;
+			text-align: right;
+		}
+
+			#table-5 caption h3 {
+				font-size: 2rem;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+			}
+
+			#table-5 caption span {
+				font-size: 0.7rem;
+				color: #999;
+			}
+
+				#table-5 caption span:before {
+					content: 'order # ';
+					color: #666;
+				}
+
+		#table-5 td,
+		#table-5 th {
+			vertical-align: top
+		}
+
+		#table-5 thead th {
+			padding: 1rem;
+			border-top: 0.1rem solid #666;
+			border-bottom: 1px solid #999;
+			font-size: 1rem;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+		}
+
+			#table-5 thead th:nth-child(-n+2) {
+				text-align: left
+			}
+
+			#table-5 thead th:nth-child(n+4),
+			#table-5 tbody td:nth-child(n+4),
+			#table-5 tfoot td:last-child {
+				text-align: right
+			}
+
+		#table-5 tbody tr:first-child td {
+			padding-top: 2rem
+		}
+
+		#table-5 tbody tr:last-child td {
+			padding-bottom: 2rem
+		}
+
+		#table-5 tbody td:nth-child(3) {
+			text-align: center
+		}
+
+		#table-5 tbody td {
+			padding: 1rem
+		}
+
+			#table-5 tbody td:first-child span {
+				display: block;
+				font-weight: bold;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				color: #666;
+			}
+
+			#table-5 tbody td:not(:first-child) span:before,
+			#table-5 tfoot span:before {
+				content: '£'
+			}
+
+		#table-5 time {
+			display: block;
+			font-size: 0.7rem;
+			color: #999;
+		}
+
+			#table-5 time:before {
+				content: 'date release: '
+			}
+
+		#table-5 tfoot tr:nth-child(1) td {
+			border-top: 1px solid #999;
+			padding-top: 2rem;
+		}
+
+		#table-5 tfoot tr:nth-child(2) td {
+			padding: 0 0 2rem 0;
+			font-weight: normal;
+			color: #4caf50;
+		}
+
+		#table-5 tfoot tr:nth-child(3) {
+			border-top: 0.1rem solid #666
+		}
+
+			#table-5 tfoot tr:nth-child(3) td {
+				padding-top: 2rem;
+				font-size: 1rem;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+			}
+
+		#table-5 tfoot td:first-child,
+		#table-5 tfoot tr:last-child {
+			font-weight: bold
+		}
+
+		#table-5 tfoot p {
+			margin-top: 4rem;
+			font-size: 0.8rem;
+			letter-spacing: normal;
+			text-transform: capitalize;
+		}
+
+			#table-5 tfoot p:before {
+				display: block;
+				height: 4rem;
+				content: '';
+				background: url(img/signature.svg) no-repeat center right;
+				background-size: contain;
+			}
+	</style>
+	<header>
+		<h2>Таблица № 5</h2>
+	</header>
+	<div class="wrapper">
+		<div class="paper">
+			<table>
+				<caption>
+					<h3>Invoice</h3>
+					<span>0535697</span>
+				</caption>
+				<thead>
+					<tr>
+						<th>Description Items</th>
+						<th>Unit price</th>
+						<th>QTY</th>
+						<th>Amount</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><span>Duis rutrum sapien</span> <time>August 20, 2019</time></td>
+						<td><span>325.49</span></td>
+						<td>11</td>
+						<td><span>3'580.39</span></td>
+					</tr>
+					<tr>
+						<td><span>Mauris sagittis lectus</span> <time>September 15, 2019</time></td>
+						<td><span>482.58</span></td>
+						<td>15</td>
+						<td><span>7'238.70</span></td>
+					</tr>
+					<tr>
+						<td><span>Curabitur sed</span> <time>September 30, 2019</time></td>
+						<td><span>498.57</span></td>
+						<td>21</td>
+						<td><span>10'469.97</span></td>
+					</tr>
+					<tr>
+						<td><span>Sed quis libero dictum</span> <time>October 10, 2019</time></td>
+						<td><span>964.18</span></td>
+						<td>8</td>
+						<td><span>7'713.44</span></td>
+					</tr>
+					<tr>
+						<td><span>Vivamus finibus augue</span> <time>November 12, 2019</time></td>
+						<td><span>951.65</span></td>
+						<td>20</td>
+						<td><span>19'033.00</span></td>
+					</tr>
+					<tr>
+						<td><span>Nullam vel ligula consectetur</span> <time>December 1, 2019</time></td>
+						<td><span>716.54</span></td>
+						<td>10</td>
+						<td><span>7'165.40</span></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>Sub-Total</td>
+						<td colspan="3"><span>55'200.9</span></td>
+					</tr>
+					<tr>
+						<td>Discount - 30%</td>
+						<td colspan="3"><span>16'560.27</span></td>
+					</tr>
+					<tr>
+						<td>Grand Total</td>
+						<td colspan="3">
+							<span>38'640.63</span>
+							<p>Modi Tempora</p>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+</section>
+
+<section id="table-6">
+	<style>
+		#table-6 table {
+			width: 100%;
+			min-width: 46rem;
+			border-spacing: 2rem 0;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 0.85rem;
+			color: #333;
+			background-color: #e1d8d9;
+		}
+
+		#table-6 td,
+		#table-6 th {
+			padding: 1rem
+		}
+
+		#table-6 thead th {
+			font-weight: normal
+		}
+
+		#table-6 thead tr:nth-child(1) th {
+			border-top: 2rem solid #e1d8d9
+		}
+
+		#table-6 th:nth-child(n+2) {
+			width: 20%
+		}
+
+		#table-6 .th-name {
+			font-weight: bold;
+			line-height: 2rem;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #666;
+		}
+
+		#table-6 tbody th {
+			text-align: left
+		}
+
+		#table-6 tbody tr {
+			background-color: #f0f0f0
+		}
+
+			#table-6 tbody tr:first-child > * {
+				box-shadow: 0 -0.2rem 0.2rem -0.1rem rgba(0,0,0,.3)
+			}
+
+			#table-6 tbody tr:last-child > * {
+				box-shadow: 0 0.2rem 0.2rem -0.1rem rgba(0,0,0,.3)
+			}
+
+		#table-6 td {
+			font-size: 1rem;
+			text-align: center;
+		}
+
+			#table-6 td.fa-plus {
+				color: #7CB342
+			}
+
+			#table-6 td.fa-minus {
+				color: #e53935
+			}
+
+		#table-6 .th-data.lorem {
+			background-color: #6b6f8c
+		}
+
+		#table-6 .th-name.junior {
+			background-color: #b3e1f9
+		}
+
+		#table-6 .th-name.middle {
+			background-color: #d8dbb9
+		}
+
+		#table-6 .th-name.senior {
+			background-color: #fbdcc7
+		}
+
+		#table-6 .th-data.junior,
+		#table-6 .learn.junior {
+			background-color: #8bd4f7
+		}
+
+		#table-6 .th-data.middle,
+		#table-6 .learn.middle {
+			background-color: #c5ca94
+		}
+
+		#table-6 .th-data.senior,
+		#table-6 .learn.senior {
+			background-color: #f8caa9
+		}
+
+		#table-6 .th-data .price {
+			color: #fff;
+			line-height: 2.5rem;
+		}
+
+		#table-6 .th-data .price-value,
+		#table-6 .th-data.lorem .price {
+			font-size: 2rem;
+			font-weight: bold;
+		}
+
+			#table-6 .th-data .price-value:before {
+				content: '$';
+				font-weight: normal;
+			}
+
+			#table-6 .th-data .price-value .cent {
+				font-size: 1rem
+			}
+
+		#table-6 .th-data .price:after {
+			display: block;
+			content: 'per user / month';
+			font-size: 0.7rem;
+			line-height: 1rem;
+			color: #fff;
+		}
+
+		#table-6 .th-data.lorem .price:after {
+			content: 'rate table';
+			display: block;
+			font-size: 0.7rem;
+			color: #fff;
+		}
+
+		#table-6 tbody tr:nth-child(odd) td,
+		#table-6 tbody tr:nth-child(odd) th {
+			background-color: #fff
+		}
+
+		#table-6 .learn {
+			display: inline-block;
+			padding: 0 2rem;
+			border-radius: 0.5rem;
+			line-height: 2rem;
+			color: #fff;
+		}
+
+			#table-6 .learn:hover {
+				box-shadow: 0 0 0.3rem -0.15rem rgba(0,0,0,.5);
+				background-color: #999;
+				cursor: pointer;
+			}
+
+			#table-6 .learn:active {
+				box-shadow: none
+			}
+	</style>
+	<header>
+		<h2>Таблица № 6</h2>
+	</header>
+	<table>
+		<thead>
+			<tr>
+				<th rowspan="2" class="th-data lorem">
+					<p class="price">preference</p>
+				</th>
+				<th class="th-name junior">Junior</th>
+				<th class="th-name middle">Middle</th>
+				<th class="th-name senior">Senior</th>
+			</tr>
+			<tr>
+				<th class="th-data junior">
+					<p class="price"><span class="price-value">199<sup class="cent">59</sup></span></p>
+				</th>
+				<th class="th-data middle">
+					<p class="price"><span class="price-value">259<sup class="cent">69</sup></span></p>
+				</th>
+				<th class="th-data senior">
+					<p class="price"><span class="price-value">599<sup class="cent">99</sup></span></p>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Lorem ipsum</th>
+				<td class="far fa-plus"></td>
+				<td class="far fa-plus"></td>
+				<td class="far fa-plus"></td>
+			</tr>
+			<tr>
+				<th>Dolor sit amet</th>
+				<td class="far fa-plus"></td>
+				<td class="far fa-plus"></td>
+				<td class="far fa-plus"></td>
+			</tr>
+			<tr>
+				<th>Consectetur adipiscing</th>
+				<td class="far fa-plus"></td>
+				<td class="far fa-plus"></td>
+				<td class="far fa-plus"></td>
+			</tr>
+			<tr>
+				<th>Sed do eiusmod tempor</th>
+				<td class="far fa-plus"></td>
+				<td class="far fa-plus"></td>
+				<td class="far fa-plus"></td>
+			</tr>
+			<tr>
+				<th>Incididunt ut labore</th>
+				<td class="far fa-minus"></td>
+				<td class="far fa-plus"></td>
+				<td class="far fa-plus"></td>
+			</tr>
+			<tr>
+				<th>Et dolore magna aliqua</th>
+				<td class="far fa-minus"></td>
+				<td class="far fa-plus"></td>
+				<td class="far fa-plus"></td>
+			</tr>
+			<tr>
+				<th>Ut enim ad minim</th>
+				<td class="far fa-minus"></td>
+				<td class="far fa-plus"></td>
+				<td class="far fa-plus"></td>
+			</tr>
+			<tr>
+				<th>Nostrud exercitation</th>
+				<td class="far fa-minus"></td>
+				<td class="far fa-minus"></td>
+				<td class="far fa-plus"></td>
+			</tr>
+			<tr>
+				<th>Aliquip ex ea commodo</th>
+				<td class="far fa-minus"></td>
+				<td class="far fa-minus"></td>
+				<td class="far fa-plus"></td>
+			</tr>
+			<tr>
+				<th>Duis aute irure dolor</th>
+				<td class="far fa-minus"></td>
+				<td class="far fa-minus"></td>
+				<td class="far fa-plus"></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th></th>
+				<td><span class="learn junior">learn</span></td>
+				<td><span class="learn middle">learn</span></td>
+				<td><span class="learn senior">learn</span></td>
+			</tr>
+		</tfoot>
+	</table>
+</section>
+
+<section id="table-7">
+	<style>
+		#table-7 .wrapper {
+			min-width: 44rem;
+			padding: 2rem;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 0.85rem;
+			background-color: #efebe9;
+			color: #333;
+		}
+
+		#table-7 table {
+			width: 100%;
+			margin: 0 auto;
+			border-collapse: collapse;
+			border-spacing: 0;
+			text-align: left;
+			background-color: #fff;
+		}
+
+		#table-7 caption {
+			margin-bottom: 2rem;
+			font-size: 1.5rem;
+			font-weight: bold;
+			color: #795548;
+		}
+
+		#table-7 thead tr {
+			border-bottom: 1px solid #bcaaa4;
+			background-color: #efebe9;
+		}
+
+		#table-7 tbody tr {
+			box-shadow: 0 0.2rem 0.2rem -0.1rem rgba(0,0,0,.2)
+		}
+
+			#table-7 tbody tr:hover .user-avatar {
+				height: 3rem;
+				width: 3rem;
+			}
+
+		#table-7 .td-name {
+			width: 30%
+		}
+
+		#table-7 .td-policy,
+		#table-7 .td-policy-status {
+			width: 20%
+		}
+
+		#table-7 .td-destination,
+		#table-7 .td-status {
+			width: 15%
+		}
+
+		#table-7 td,
+		#table-7 th {
+			padding: 1rem;
+			font-size: 0.7rem;
+			color: #795548;
+		}
+
+			#table-7 td + td,
+			#table-7 th + th {
+				padding-left: 0;
+			}
+
+		#table-7 .th-title {
+			letter-spacing: 0.075em;
+			text-transform: uppercase;
+			color: #795548;
+			cursor: default;
+		}
+
+			#table-7 .th-title:hover {
+				color: #4caf50;
+				cursor: pointer;
+			}
+
+		#table-7 .user-avatar {
+			float: left;
+			height: 2rem;
+			width: 2rem;
+			border-radius: 50%;
+			object-fit: cover;
+			object-position: center;
+			margin-right: 0.5rem;
+		}
+
+		#table-7 .user-name,
+		#table-7 .user-post {
+			width: calc(100% - 2.5rem);
+			margin-left: auto;
+			line-height: 1rem;
+		}
+
+		#table-7 .user-name {
+			font-size: 0.7rem
+		}
+
+		#table-7 .user-post,
+		#table-7 .policy-type {
+			font-size: 0.65rem;
+			color: #bcaaa4;
+		}
+
+		#table-7 .policy-value:before {
+			content: '$'
+		}
+
+		#table-7 .status {
+			font-weight: bold;
+			line-height: 1rem;
+		}
+
+			#table-7 .status:before {
+				content: '•';
+				float: left;
+				margin-right: 0.25rem;
+				font-size: 1.2rem;
+			}
+
+			#table-7 .status.active {
+				color: #43a047
+			}
+
+			#table-7 .status.waiting {
+				color: #757575
+			}
+
+			#table-7 .status.canceled {
+				color: #e53935
+			}
+
+			#table-7 .status.rejected {
+				color: #d81b60
+			}
+	</style>
+	<header>
+		<h2>Таблица № 7</h2>
+	</header>
+	<div class="wrapper">
+		<table>
+			<caption>Employees</caption>
+			<thead>
+				<tr>
+					<th><span class="th-title">Name</span></th>
+					<th><span class="th-title">Policy</span></th>
+					<th><span class="th-title">Policy status</span></th>
+					<th><span class="th-title">Destination</span></th>
+					<th><span class="th-title">Status</span></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="td-name">
+						<img class="user-avatar" src="img/avatar_01.jpg" />
+						<p class="user-name">Julia Lavoi</p>
+						<p class="user-post">CFO</p>
+					</td>
+					<td class="td-policy">
+						<span class="policy-value">5'000</span>
+						<p class="policy-type">Basic Policy</p>
+					</td>
+					<td class="td-policy-status"><span class="policy-status approved">Approved</span></td>
+					<td class="td-destination"><span class="destination">Huston, US</span></td>
+					<td class="td-status"><span class="status active">Active</span></td>
+				</tr>
+				<tr>
+					<td class="td-name">
+						<img class="user-avatar" src="img/avatar_02.jpg" />
+						<p class="user-name">Nor Again</p>
+						<p class="user-post">Vp of Sales</p>
+					</td>
+					<td class="td-policy">
+						<span class="policy-value">20'000</span>
+						<p class="policy-type">All Inclusive Policy</p>
+					</td>
+					<td class="td-policy-status"><span class="policy-status awating-approval">Awating Approval</span></td>
+					<td class="td-destination"><span class="destination">Huston, US</span></td>
+					<td class="td-status"><span class="status waiting">Waiting</span></td>
+				</tr>
+				<tr>
+					<td class="td-name">
+						<img class="user-avatar" src="img/avatar_03.jpg" />
+						<p class="user-name">Some Advantage</p>
+						<p class="user-post">Advisory board</p>
+					</td>
+					<td class="td-policy">
+						<span class="policy-value">5'000</span>
+						<p class="policy-type">Basic Policy</p>
+					</td>
+					<td class="td-policy-status"><span class="policy-status approved">Approved</span></td>
+					<td class="td-destination"><span class="destination">Huston, US</span></td>
+					<td class="td-status"><span class="status canceled">Canceled</span></td>
+				</tr>
+				<tr>
+					<td class="td-name">
+						<img class="user-avatar" src="img/avatar_04.jpg" />
+						<p class="user-name">Nam Libero</p>
+						<p class="user-post">Social content manager</p>
+					</td>
+					<td class="td-policy">
+						<span class="policy-value">5'000</span>
+						<p class="policy-type">Basic Policy</p>
+					</td>
+					<td class="td-policy-status"><span class="policy-status rejected">Rejected</span></td>
+					<td class="td-destination"><span class="destination">Huston, US</span></td>
+					<td class="td-status"><span class="status rejected">Rejected</span></td>
+				</tr>
+				<tr>
+					<td class="td-name">
+						<img class="user-avatar" src="img/avatar_05.jpg" />
+						<p class="user-name">H. Rackham</p>
+						<p class="user-post">Account manager</p>
+					</td>
+					<td class="td-policy">
+						<span class="policy-value">25'000</span>
+						<p class="policy-type">Basic Policy</p>
+					</td>
+					<td class="td-policy-status"><span class="policy-status awating-approval">Awating Approval</span></td>
+					<td class="td-destination"><span class="destination">Boston, US</span></td>
+					<td class="td-status"><span class="status active">Active</span></td>
+				</tr>
+				<tr>
+					<td class="td-name">
+						<img class="user-avatar" src="img/avatar_06.jpg" />
+						<p class="user-name">Modi Tempora</p>
+						<p class="user-post">Social content manager</p>
+					</td>
+					<td class="td-policy">
+						<span class="policy-value">30'000</span>
+						<p class="policy-type">All Inclusive Policy</p>
+					</td>
+					<td class="td-policy-status"><span class="policy-status rejected">Rejected</span></td>
+					<td class="td-destination"><span class="destination">Huston, US	</span></td>
+					<td class="td-status"><span class="status rejected">Rejected</span></td>
+				</tr>
+				<tr>
+					<td class="td-name">
+						<img class="user-avatar" src="img/avatar_07.jpg" />
+						<p class="user-name">Sapiente Delectus</p>
+						<p class="user-post">CEO</p>
+					</td>
+					<td class="td-policy">
+						<span class="policy-value">45'000</span>
+						<p class="policy-type">All Inclusive Policy</p>
+					</td>
+					<td class="td-policy-status"><span class="policy-status approved">Approved</span></td>
+					<td class="td-destination"><span class="destination">New York, US</span></td>
+					<td class="td-status"><span class="status active">Active</span></td>
+				</tr>
+				<tr>
+					<td class="td-name">
+						<img class="user-avatar" src="img/avatar_08.jpg" />
+						<p class="user-name">Bonorum de'Malorum </p>
+						<p class="user-post">Account manager</p>
+					</td>
+					<td class="td-policy">
+						<span class="policy-value">15'000</span>
+						<p class="policy-type">Basic Policy</p>
+					</td>
+					<td class="td-policy-status"><span class="policy-status">Approved</span></td>
+					<td class="td-destination"><span class="destination">Boston, US</span></td>
+					<td class="td-status"><span class="status canceled">Canceled</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+
+<section id="table-8">
+	<style>
+		#table-8 table {
+			width: 100%;
+			min-width: 50rem;
+			border: 1rem solid #333;
+			border-spacing: 0;
+			border-top: none;
+			border-radius: 0 0 0.5rem 0.5rem;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 0.85rem;
+			white-space: nowrap;
+			color: #333;
+		}
+
+		#table-8 caption {
+			font-size: 2rem;
+			font-weight: bold;
+			border: 1rem solid #333;
+			border-radius: 0.5rem 0.5rem 0 0;
+			background-color: #333;
+			color: #fff;
+		}
+
+		#table-8 th,
+		#table-8 td {
+			background-repeat: no-repeat
+		}
+
+		#table-8 .th-plan.junior {
+			background-image: linear-gradient(transparent calc(100% - 0.5rem), rgba(0,0,0,.15)), linear-gradient(-105deg, transparent 3rem, #00f2fe calc(3rem + 1px), #4facfe);
+		}
+
+		#table-8 .th-plan.middle {
+			background-image: linear-gradient(transparent calc(100% - 0.5rem), rgba(0,0,0,.15)), linear-gradient(-105deg, transparent 3rem, #38f9d7 calc(3rem + 1px), #43e97b);
+		}
+
+		#table-8 .th-plan.senior {
+			background-image: linear-gradient(transparent calc(100% - 0.5rem), rgba(0,0,0,.15)), linear-gradient(-105deg, transparent 3rem, #fee140 calc(3rem + 1px), #fa709a);
+		}
+
+		#table-8 .th-price {
+			width: 30%;
+			background-image: linear-gradient(transparent calc(100% - 0.5rem), rgba(0,0,0,.15)), linear-gradient(105deg, transparent 3rem, #999 calc(3rem + 1px));
+		}
+
+		#table-8 tr:nth-child(3n + 3) td {
+			background-image: linear-gradient(transparent calc(100% - 0.5rem), rgba(0,0,0,.15))
+		}
+
+		#table-8 .th-plan {
+			width: 30%;
+			padding: 2rem 3rem 2rem 0;
+			text-align: center;
+		}
+
+		#table-8 tbody tr:nth-child(3n + 1) td {
+			vertical-align: bottom
+		}
+
+		#table-8 tbody tr:nth-child(3n + 3) td {
+			vertical-align: top
+		}
+
+		#table-8 tbody td:first-child,
+		#table-8 tbody tr:nth-child(3n + 1) td:nth-child(2) {
+			width: 20%;
+			padding-right: 1rem;
+			text-align: right;
+		}
+
+		#table-8 tbody td:last-child,
+		#table-8 tbody tr:nth-child(3n + 1) td:nth-child(3) {
+			width: 20%;
+			padding-left: 1rem;
+		}
+
+		#table-8 .plan-name {
+			font-size: 2rem;
+			line-height: 2.5rem;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: rgba(255,255,255,0.85);
+		}
+
+		#table-8 .plan-button {
+			display: inline-block;
+			margin-top: 1rem;
+			padding: 0 2rem;
+			border-radius: 1rem;
+			font-size: 0.8rem;
+			font-weight: normal;
+			line-height: 2rem;
+			background-color: rgba(255,255,255,0.75);
+			cursor: pointer;
+		}
+
+			#table-8 .plan-button:hover {
+				background-color: #fff
+			}
+
+		#table-8 .th-price {
+			padding-left: 3rem;
+			text-align: center;
+		}
+
+		#table-8 .price {
+			line-height: 2.5rem;
+			color: #fff;
+		}
+
+		#table-8 .price-value {
+			font-size: 2rem;
+			font-weight: bold;
+		}
+
+			#table-8 .price-value:before {
+				content: '$';
+				font-weight: normal;
+			}
+
+			#table-8 .price-value .cent {
+				font-size: 1rem
+			}
+	</style>
+	<header>
+		<h2>Таблица № 8</h2>
+	</header>
+	<table>
+		<caption>Price table</caption>
+		<tbody>
+			<tr>
+				<th rowspan="3" class="th-plan junior">
+					<p class="plan-name">junior</p>
+					<div class="plan-button">learn</div>
+				</th>
+				<td>Lorem ipsum</td>
+				<td>Dolor sit amet</td>
+				<th rowspan="3" class="th-price">
+					<p class="price"><span class="price-value">199<sup class="cent">59</sup></span></p>
+				</th>
+			</tr>
+			<tr>
+				<td>Consectetur adipiscing</td>
+				<td>Sed do eiusmod tempor</td>
+			</tr>
+			<tr>
+				<td>Incididunt ut labore</td>
+				<td>Et dolore magna aliqua</td>
+			</tr>
+			<tr>
+				<th rowspan="3" class="th-plan middle">
+					<p class="plan-name">middle</p>
+					<div class="plan-button">learn</div>
+				</th>
+				<td>Ut enim ad minim</td>
+				<td>Nostrud exercitation</td>
+				<th rowspan="3" class="th-price">
+					<p class="price"><span class="price-value">259<sup class="cent">69</sup></span></p>
+				</th>
+			</tr>
+			<tr>
+				<td>Aliquip ex ea commodo</td>
+				<td>Duis aute irure dolor</td>
+			</tr>
+			<tr>
+				<td>Morbi a est nec eros</td>
+				<td>Fusce volutpat nunc</td>
+			</tr>
+			<tr>
+				<th rowspan="3" class="th-plan senior">
+					<p class="plan-name">senior</p>
+					<div class="plan-button">learn</div>
+				</th>
+				<td>Donec vestibulum massa</td>
+				<td>Cras auctor sem nec</td>
+				<th rowspan="3" class="th-price">
+					<p class="price"><span class="price-value">599<sup class="cent">99</sup></span></p>
+				</th>
+			</tr>
+			<tr>
+				<td>Proin volutpat lorem</td>
+				<td>Sed et velit a erat</td>
+			</tr>
+			<tr>
+				<td>Sed et velit at erat</td>
+				<td>Duis luctus nunc eu elit</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<section id="table-9">
+	<style>
+		#table-9 .wrapper {
+			min-width: 50rem;
+			padding: 2rem;
+			background-color: #f7fbff;
+		}
+
+		#table-9 table {
+			width: 100%;
+			border-collapse: separate;
+			border-spacing: 0 0.5rem;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 0.85rem;
+			color: #666;
+		}
+
+		#table-9 td:nth-child(1) {
+			width: 25%
+		}
+
+		#table-9 td:nth-child(2) {
+			width: 26%
+		}
+
+		#table-9 td:nth-child(3) {
+			width: 14%
+		}
+
+		#table-9 td:nth-child(4) {
+			width: 20%
+		}
+
+		#table-9 td:nth-child(6) {
+			width: 16%
+		}
+
+		#table-9 tr {
+			box-shadow: 0 0 0.3rem -0.1rem rgba(0,0,0,0.3);
+			cursor: pointer;
+		}
+
+			#table-9 tr:hover {
+				box-shadow: 0 0 0.5rem -0.2rem rgba(0,0,0,1)
+			}
+
+		#table-9 td {
+			padding: 1rem;
+			background-color: #fff;
+		}
+
+			#table-9 td + td {
+				padding-left: 0
+			}
+
+		#table-9 tr + tr {
+			border: 1px solid #eceff1
+		}
+
+		#table-9 .social {
+			line-height: 2rem
+		}
+
+			#table-9 .social:before {
+				display: block;
+				float: left;
+				height: 2rem;
+				width: 2rem;
+				margin-right: 0.5rem;
+				border-radius: 0.25rem;
+				text-align: center;
+				line-height: 2rem;
+				color: #fff;
+			}
+
+			#table-9 .social.fa-quora:before {
+				background-color: #b92b27
+			}
+
+			#table-9 .social.fa-vine:before {
+				background-color: #00b489
+			}
+
+			#table-9 .social.fa-instagram:before {
+				background-color: #e4405f
+			}
+
+			#table-9 .social.fa-linkedin-in:before {
+				background-color: #0077b5
+			}
+
+			#table-9 .social.fa-viber:before {
+				background-color: #665bac
+			}
+
+			#table-9 .social.fa-twitter:before {
+				background-color: #55acee
+			}
+
+			#table-9 .social.fa-odnoklassniki:before {
+				background-color: #d6792d
+			}
+
+			#table-9 .social.fa-youtube:before {
+				background-color: #cd201f
+			}
+
+			#table-9 .social.fa-facebook-f:before {
+				background-color: #3b5999
+			}
+
+		#table-9 .progress {
+			float: left;
+			overflow: hidden;
+			width: calc(100% - 2.5rem);
+			height: 0.4rem;
+			margin: 0.8rem 0.5rem 0 0;
+			border-radius: 0.2rem;
+			background-color: #eceff1;
+		}
+
+			#table-9 .progress .line {
+				width: 50%;
+				height: 0.4rem;
+				border: none;
+				border-radius: 0.2rem;
+				background-color: #42A5F5;
+			}
+
+		#table-9 .td-progress .value {
+			display: block;
+			float: left;
+			line-height: 2rem;
+			text-align: left;
+		}
+
+			#table-9 .td-progress .value:after {
+				content: '%'
+			}
+
+		#table-9 .td-status {
+			text-align: left
+		}
+
+		#table-9 .status {
+			display: inline-block;
+			padding: 0.5rem 1.5rem;
+			border-radius: 1rem;
+			font-size: 0.7rem;
+			font-weight: bold;
+			line-height: 1rem;
+			letter-spacing: 0.075em;
+		}
+
+			#table-9 .status.weak {
+				background-color: #ffebee;
+				color: #ef5350
+			}
+
+			#table-9 .status.stable {
+				background-color: #e8f5e9;
+				color: #66bb6a
+			}
+
+			#table-9 .status.shaky {
+				background-color: #fff3e0;
+				color: #ffa726
+			}
+
+		#table-9 .td-action {
+			font-size: 1rem
+		}
+
+			#table-9 .td-action:before {
+				display: block;
+				width: 2rem;
+				line-height: 2rem;
+				text-align: center;
+				color: #ccc;
+				cursor: pointer;
+			}
+
+		#table-9 .td-arrow {
+			font-size: 1rem
+		}
+
+			#table-9 .td-arrow:before {
+				display: block;
+				width: 2rem;
+				padding-left: 0.6rem;
+				border-left: 0.05rem solid #ccc;
+				line-height: 2rem;
+				text-align: center;
+				color: #ccc;
+				cursor: pointer;
+			}
+	</style>
+	<header>
+		<h2>Таблица № 9</h2>
+	</header>
+	<div class="wrapper">
+		<table>
+			<tbody>
+				<tr>
+					<td class="td-name"><span class="social fab fa-quora">Quora</span></td>
+					<td class="td-type">Public Opition</td>
+					<td class="td-period">1d ago</td>
+					<td class="td-progress">
+						<div class="progress"><hr class="line" style="width: 15%" /></div>
+						<span class="value">15</span>
+					</td>
+					<td class="td-status">
+						<span class="status weak">Weak</span>
+					</td>
+					<td class="td-amount">0 of 8</td>
+					<td class="td-action fas fa-ellipsis-v"></td>
+					<td class="td-arrow far fa-chevron-down"></td>
+				</tr>
+				<tr>
+					<td class="td-name"><span class="social fab fa-vine">Vine</span></td>
+					<td class="td-type">Video Publishing</td>
+					<td class="td-period">2d ago</td>
+					<td class="td-progress">
+						<div class="progress"><hr class="line" style="width: 92%" /></div>
+						<span class="value">92</span>
+					</td>
+					<td class="td-status">
+						<span class="status stable">Stable</span>
+					</td>
+					<td class="td-amount">13 of 13</td>
+					<td class="td-action fas fa-ellipsis-v"></td>
+					<td class="td-arrow far fa-chevron-down"></td>
+				</tr>
+				<tr>
+					<td class="td-name"><span class="social fab fa-instagram">Instagram</span></td>
+					<td class="td-type">Photo Publishing</td>
+					<td class="td-period">Sep 29</td>
+					<td class="td-progress">
+						<div class="progress"><hr class="line" style="width: 75%" /></div>
+						<span class="value">75</span>
+					</td>
+					<td class="td-status">
+						<span class="status stable">Stable</span>
+					</td>
+					<td class="td-amount">14 of 20</td>
+					<td class="td-action fas fa-ellipsis-v"></td>
+					<td class="td-arrow far fa-chevron-down"></td>
+				</tr>
+				<tr>
+					<td class="td-name"><span class="social fab fa-linkedin-in">LinkedIn</span></td>
+					<td class="td-type">Professional Network</td>
+					<td class="td-period">Sep 3</td>
+					<td class="td-progress">
+						<div class="progress"><hr class="line" style="width: 50%" /></div>
+						<span class="value">50</span>
+					</td>
+					<td class="td-status">
+						<span class="status shaky">Shaky</span>
+					</td>
+					<td class="td-amount">2 of 3</td>
+					<td class="td-action fas fa-ellipsis-v"></td>
+					<td class="td-arrow far fa-chevron-down"></td>
+				</tr>
+				<tr>
+					<td class="td-name"><span class="social fab fa-viber">Viber</span></td>
+					<td class="td-type">Communication</td>
+					<td class="td-period">Aug 30</td>
+					<td class="td-progress">
+						<div class="progress"><hr class="line" style="width: 4%" /></div>
+						<span class="value">4</span>
+					</td>
+					<td class="td-status">
+						<span class="status weak">Weak</span>
+					</td>
+					<td class="td-amount">0 of 3</td>
+					<td class="td-action fas fa-ellipsis-v"></td>
+					<td class="td-arrow far fa-chevron-down"></td>
+				</tr>
+				<tr>
+					<td class="td-name"><span class="social fab fa-twitter">Twitter</span></td>
+					<td class="td-type">Social Media</td>
+					<td class="td-period">Aug 28</td>
+					<td class="td-progress">
+						<div class="progress"><hr class="line" style="width: 87%" /></div>
+						<span class="value">87</span>
+					</td>
+					<td class="td-status">
+						<span class="status stable">Stable</span>
+					</td>
+					<td class="td-amount">14 of 16</td>
+					<td class="td-action fas fa-ellipsis-v"></td>
+					<td class="td-arrow far fa-chevron-down"></td>
+				</tr>
+				<tr>
+					<td class="td-name"><span class="social fab fa-odnoklassniki">Ok</span></td>
+					<td class="td-type">Social Media</td>
+					<td class="td-period">Aug 23</td>
+					<td class="td-progress">
+						<div class="progress"><hr class="line" style="width: 47%" /></div>
+						<span class="value">47</span>
+					</td>
+					<td class="td-status">
+						<span class="status shaky">Shaky</span>
+					</td>
+					<td class="td-amount">1 of 2</td>
+					<td class="td-action fas fa-ellipsis-v"></td>
+					<td class="td-arrow far fa-chevron-down"></td>
+				</tr>
+				<tr>
+					<td class="td-name"><span class="social fab fa-youtube">YouTube</span></td>
+					<td class="td-type">Video Publishing</td>
+					<td class="td-period">Jun 27</td>
+					<td class="td-progress">
+						<div class="progress"><hr class="line" style="width: 96%" /></div>
+						<span class="value">96</span>
+					</td>
+					<td class="td-status">
+						<span class="status stable">Stable</span>
+					</td>
+					<td class="td-amount">15 of 20</td>
+					<td class="td-action fas fa-ellipsis-v"></td>
+					<td class="td-arrow far fa-chevron-down"></td>
+				</tr>
+				<tr>
+					<td class="td-name"><span class="social fab fa-facebook-f">Facebook</span></td>
+					<td class="td-type">Social Media</td>
+					<td class="td-period">Jun 1</td>
+					<td class="td-progress">
+						<div class="progress"><hr class="line" style="width: 35%" /></div>
+						<span class="value">35</span>
+					</td>
+					<td class="td-status">
+						<span class="status stable">Stable</span>
+					</td>
+					<td class="td-amount">50 of 68</td>
+					<td class="td-action fas fa-ellipsis-v"></td>
+					<td class="td-arrow far fa-chevron-down"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+
+</main>
+</body>
+</html>
